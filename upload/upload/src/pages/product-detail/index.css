@@ -1,0 +1,458 @@
+.product-detail-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #F5F5F5;
+  position: relative;
+}
+
+.detail-content {
+  height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* 顶部导航栏 */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-back,
+.nav-share {
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+/* 商品图片 */
+.product-images {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #fff;
+}
+
+.image-scroll {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.image-item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-indicator {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.indicator-text {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* 商品信息 */
+.product-info {
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.info-header {
+  margin-bottom: 12px;
+}
+
+.info-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tag-item {
+  background: #EFF6FF;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.info-meta {
+  display: flex;
+  gap: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.meta-item {
+  flex: 1;
+}
+
+.meta-label {
+  font-size: 12px;
+  color: #9CA3AF;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.meta-value {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* 区块样式 */
+.section {
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* 硬件清单 */
+.hardware-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hardware-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #F9FAFB;
+  border-radius: 12px;
+}
+
+.hardware-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.hardware-info {
+  flex: 1;
+}
+
+/* 代码示例 */
+.code-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.code-item {
+  background: #1E293B;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.code-language {
+  background: #3B82F6;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.code-block {
+  background: #0F172A;
+  border-radius: 8px;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+.code-text {
+  font-family: monospace;
+  font-size: 12px;
+  color: #E2E8F0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* 模型文件 */
+.model-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.model-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #F9FAFB;
+  border-radius: 12px;
+}
+
+.model-icon {
+  width: 48px;
+  height: 48px;
+  background: #EFF6FF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.model-info {
+  flex: 1;
+}
+
+/* 底部操作栏 */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  padding-bottom: calc(12px + 50px);
+  background: #fff;
+  border-top: 1px solid #E5E7EB;
+}
+
+.bar-left {
+  position: relative;
+  margin-right: 16px;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #EF4444;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.bar-right {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+}
+
+.btn-add-cart,
+.btn-buy {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.btn-add-cart {
+  background: #F3F4F6;
+}
+
+.btn-buy {
+  background: #2563EB;
+}
+
+.btn-text {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-buy .btn-text {
+  color: #fff;
+}
+
+/* 支付弹窗 */
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.modal-close {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.payment-info {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.payment-methods {
+  margin: 16px 0;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #F9FAFB;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 2px solid transparent;
+}
+
+.payment-method.selected {
+  border-color: #2563EB;
+  background: #EFF6FF;
+}
+
+.method-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.method-info {
+  flex: 1;
+}
+
+.payment-qr {
+  margin-top: 16px;
+}
+
+.qr-placeholder {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: #F3F4F6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.btn-cancel,
+.btn-confirm {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.btn-cancel {
+  background: #F3F4F6;
+}
+
+.btn-confirm {
+  background: #2563EB;
+}
+
+.btn-cancel .btn-text {
+  color: #374151;
+}
+
+.btn-confirm .btn-text {
+  color: #fff;
+}

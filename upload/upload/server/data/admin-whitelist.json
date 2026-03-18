@@ -1,0 +1,6 @@
+{
+  "adminOpenids": [
+    "ozUxS3ahgz2lhXYEMv9aN9RY2nbM"
+  ],
+  "description": "管理员白名单配置文件，存储允许登录管理后台的微信 openid"
+}

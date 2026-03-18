@@ -1,0 +1,153 @@
+.ai-chat-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #F5F5F5;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.message-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.message-item.user {
+  flex-direction: row-reverse;
+}
+
+.message-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.message-content-wrapper {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-item.user .message-content-wrapper {
+  align-items: flex-end;
+}
+
+.message-role {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.message-item.user .message-role {
+  flex-direction: row-reverse;
+}
+
+.copy-btn {
+  padding: 4px;
+  opacity: 0.6;
+}
+
+.message-bubble {
+  background: white;
+  border-radius: 16px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.message-item.user .message-bubble {
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+}
+
+.message-item.user .message-bubble .text-gray-800 {
+  color: white;
+}
+
+.code-block {
+  background: #1F2937;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  overflow-x: auto;
+}
+
+.code-content {
+  color: #10B981;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.chat-input-area {
+  background: white;
+  padding: 12px 16px;
+  border-top: 1px solid #E5E7EB;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+}
+
+.input-container {
+  background: #F3F4F6;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.input-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn.disabled {
+  opacity: 0.5;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #9CA3AF;
+  animation: typing 1.4s infinite ease-in-out;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+}

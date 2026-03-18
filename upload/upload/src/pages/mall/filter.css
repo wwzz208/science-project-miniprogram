@@ -1,0 +1,131 @@
+/* 筛选弹窗遮罩 */
+.filter-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 筛选弹窗内容 */
+.filter-modal-content {
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 弹窗头部 */
+.filter-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.filter-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.filter-modal-close {
+  width: 32px;
+  height: 32px;
+  background: #F3F4F6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 筛选内容区 */
+.filter-modal-body {
+  flex: 1;
+  padding: 16px;
+}
+
+.filter-section {
+  margin-bottom: 24px;
+}
+
+.filter-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.filter-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.filter-option {
+  padding: 10px 8px;
+  background: #F3F4F6;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.filter-option-active {
+  background: #2563EB;
+}
+
+.filter-option-text {
+  font-size: 13px;
+  color: #374151;
+  display: block;
+}
+
+.filter-option-active .filter-option-text {
+  color: white;
+}
+
+/* 弹窗底部 */
+.filter-modal-footer {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.filter-reset-btn {
+  flex: 1;
+  padding: 12px;
+  background: #F3F4F6;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.filter-reset-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+  display: block;
+}
+
+.filter-confirm-btn {
+  flex: 1;
+  padding: 12px;
+  background: #2563EB;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.filter-confirm-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  display: block;
+}

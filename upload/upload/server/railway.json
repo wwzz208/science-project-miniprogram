@@ -1,0 +1,12 @@
+{
+  "name": "science-backend",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd server && npm install && npm run build",
+    "startCommand": "cd server && npm run start:prod"
+  },
+  "port": 3000,
+  "env": {
+    "PORT": "3000"
+  }
+}

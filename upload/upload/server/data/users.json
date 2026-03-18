@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "username": "test",
+    "password": "123456",
+    "nickname": "测试用户",
+    "points": 1280,
+    "level": 3
+  },
+  {
+    "id": 1773217038333,
+    "username": "123",
+    "password": "123456",
+    "nickname": "123",
+    "points": 0,
+    "level": 1
+  },
+  {
+    "id": 1773394396188,
+    "username": "wx_ozUxS3ahgz",
+    "password": "",
+    "nickname": "微信用户3122",
+    "openid": "ozUxS3ahgz2lhXYEMv9aN9RY2nbM",
+    "points": 0,
+    "level": 1
+  }
+]

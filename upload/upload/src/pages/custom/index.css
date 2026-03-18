@@ -1,0 +1,52 @@
+.custom-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #F5F5F5;
+}
+
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: 8px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 16px;
+}
+
+.navbar-left {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-title {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.navbar-right {
+  width: 40px;
+  height: 40px;
+}
+
+.custom-content {
+  height: calc(100vh - 88px);
+  padding-bottom: 20px;
+}
+
+.space-y-3 > view + view {
+  margin-top: 12px;
+}

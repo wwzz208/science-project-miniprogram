@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "智能编程机器人项目",
+    "description": "适合8-12岁儿童的图形化编程机器人项目，支持Scratch编程，培养逻辑思维能力",
+    "category": "机器人",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop",
+    "ageRange": "8-12岁",
+    "tags": [
+      "编程",
+      "机器人",
+      "Scratch"
+    ],
+    "teacherName": "袁老师",
+    "teacherPhone": "18885752526",
+    "price": 0,
+    "stock": 100,
+    "sales": 128,
+    "createdAt": "2024-01-01"
+  },
+  {
+    "id": 2,
+    "name": "电子创客入门项目",
+    "description": "包含LED、传感器、按钮等电子元件，让孩子动手制作电子项目",
+    "category": "电子",
+    "image": "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=400&h=400&fit=crop",
+    "ageRange": "10-15岁",
+    "tags": [
+      "电子",
+      "创客",
+      "STEM"
+    ],
+    "teacherName": "高老师",
+    "teacherPhone": "15998015122",
+    "price": 0,
+    "stock": 80,
+    "sales": 256,
+    "createdAt": "2024-01-02"
+  },
+  {
+    "id": 3,
+    "name": "3D打印创意项目",
+    "description": "入门级3D打印项目，包含设计软件和基础教程",
+    "category": "3D打印",
+    "image": "https://images.unsplash.com/photo-1535378437327-b7107adfb2f6?w=400&h=400&fit=crop",
+    "ageRange": "12-16岁",
+    "tags": [
+      "3D打印",
+      "设计",
+      "创意"
+    ],
+    "teacherName": "高老师",
+    "teacherPhone": "18841540415",
+    "price": 0,
+    "stock": 60,
+    "sales": 89,
+    "createdAt": "2024-01-03"
+  },
+  {
+    "id": 4,
+    "name": "AI视觉识别项目",
+    "description": "基于人工智能的视觉识别项目，支持图像分类、物体检测",
+    "category": "人工智能",
+    "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=400&fit=crop",
+    "ageRange": "13-18岁",
+    "tags": [
+      "AI",
+      "计算机视觉",
+      "机器学习"
+    ],
+    "teacherName": "袁老师",
+    "teacherPhone": "18841590987",
+    "price": 0,
+    "stock": 50,
+    "sales": 45,
+    "createdAt": "2024-01-04"
+  }
+]
