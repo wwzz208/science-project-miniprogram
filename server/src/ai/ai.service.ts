@@ -5,10 +5,14 @@ import { LLMClient, Config } from 'coze-coding-dev-sdk';
 export class AiService {
   private llmClient: LLMClient;
 
-  constructor() {
-    const config = new Config();
-    this.llmClient = new LLMClient(config);
-  }
+constructor() {
+  const config = new Config({
+    apiKey: process.env.COZE_WORKLOAD_IDENTITY_API_KEY,
+    baseUrl: process.env.COZE_INTEGRATION_BASE_URL,
+    modelBaseUrl: process.env.COZE_INTEGRATION_MODEL_BASE_URL,
+  });
+  this.llmClient = new LLMClient(config);
+}
 
   async chat(messages: Array<{ role: string; content: string }>) {
     try {
